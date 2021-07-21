@@ -1,6 +1,6 @@
 C_SOURCES = $(wildcard kernel/*.c drivers/*.c)
 HEADERS = $(wildcard kernel/*.h drivers/*.h)
-CFLAGS = -ffreestanding -m32
+CFLAGS = -ffreestanding -m32 -fno-pie
 CC = gcc
 
 OBJ = ${C_SOURCES:.c=.o}
